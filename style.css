@@ -1,0 +1,18 @@
+html{
+    background-color: hsl(275, 20%, 90%);
+    color: hsl(275, 80%, 20%);
+    font-size: 16px;
+}
+
+header{
+ align-content: center;
+ justify-content: center;
+ border: 5px solid hsl(275, 80%, 20%);
+}
+
+main{
+ display: flex;
+ width: 100%;
+ height: auto;
+ border: 2px solid hsl(275, 80%, 20%);
+}

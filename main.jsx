@@ -1,4 +1,4 @@
 import Act from './App'
-import {createRoot} from './react-dom/client'
+import { createRoot } from 'react-dom/client'
 
-createRoot(document.getElementById('cont').render(<Act />))
+createRoot(document.getElementById('cont')).render(<Act />)

@@ -1,11 +1,20 @@
-import react from 'react'
-
+import React, {useState} from 'react'
 
 export default function App(props){
+  const [input, setInput] = useState('')
+  function handler(e){
+    setInput(e.target.value)
+  }
   if(props.signIn === true){
     return(
-        <p>Hello {props.name}!</p>
+       <div>
+        <p style={{color:'blue', fontSize:40}}>Hello {props.name}!</p>
+         <form>
+           <label for="email">Enter Email</label>
+           <input id="email" name="email" type="text" onChange={handler} value={input}/>
+         </form>
+        </div>
     )
- } else {<p>Please enter username</p>}
-  
+  }
+  return <p>Please enter username</p>
 }

@@ -5,8 +5,14 @@ html{
 }
 
 header{
+ display: flex;
+ width: auto;
+ height: auto;
  align-content: center;
+ align-self: center;
+ justify-self: center;
  justify-content: center;
+ text-align: center;
  border: 5px solid hsl(275, 80%, 20%);
 }
 
